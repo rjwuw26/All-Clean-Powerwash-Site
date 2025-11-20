@@ -1,3 +1,5 @@
+import ServiceCard from '@/components/ServiceCard';
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -11,19 +13,27 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 px-16">
-        <h2 className="text-3xl font-bold text-center mb-8 text-center">Our Services</h2>
+      <section className="py-20 bg-gray-100">
+        <h2 className="text-3xl font-bold text-gray-900 text-center mb-12 text-center">Our Services</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Will use <ServiceCard /> here later */}
-          <div className="border p-6 rounded-xl shadow">Driveway Cleaning</div>
-          <div className="border p-6 rounded-xl shadow">Patio Cleaning</div>
-          <div className="border p-6 rounded-xl shadow">Deck Cleaning</div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+          <ServiceCard
+            title="Driveway Cleaning"
+            description="Remove dirt, grime, and non-oil/rust stains from your driveway to enhance appeal."
+          />
+          <ServiceCard
+            title="Patio Cleaning"
+            description="Revitalize your patio by eliminating mold, mildew, and dirt buildup."
+          />
+          <ServiceCard
+            title="Deck Cleaning"
+            description="Restore your deck's natural beauty with light washing to remove dirt and algae."
+          />
         </div>
       </section>
 
       {/* Mini About Me / Intro */}
-      <section className="py-20 bg-gray-100 text-center px-6">
+      <section className="py-20 bg-gray-500 text-center px-6">
         <h2 className="text-3xl font-bold mb-4">Why Choose Us?</h2>
         <p className="max-w-2x1 max-auto text-lg">
           Reliable service, modern equipment, and unbeatable results. All Clean Powerwash
